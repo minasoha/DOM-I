@@ -57,6 +57,13 @@ links[5].textContent = siteContent['nav']['nav-item-6'];
 
 
 // Done with links
+let titleContent = siteContent['cta']['h1'];
+titleContent = titleContent.replaceAll(' ', '<br> ');
+const title = document.querySelector('.cta-text h1');
+title.innerHTML = titleContent; 
 
+const button = document.querySelector('.cta-text button');
+button.textContent = siteContent['cta']['button'];
 
-
+let ctaImg = document.querySelector("#cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
