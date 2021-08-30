@@ -67,3 +67,22 @@ button.textContent = siteContent['cta']['button'];
 
 let ctaImg = document.querySelector("#cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+
+
+const newLinkOne = document.createElement('a');
+newLinkOne.textContent = 'New Button';
+newLinkOne.href = '#';
+newLinkOne.style.color = 'green';
+document.querySelector('nav').appendChild(newLinkOne);
+
+const newLinkTwo = document.createElement('a');
+newLinkTwo.textContent = 'New Button';
+newLinkTwo.href = '#';
+newLinkTwo.style.color = 'green';
+document.querySelector('nav').appendChild(newLinkTwo);
+
+links.forEach(link => link.style.color = 'green');
+
+//DONE with header
+
