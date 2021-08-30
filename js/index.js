@@ -108,4 +108,20 @@ paraphContent[3].textContent = siteContent['main-content']['product-content'];
 paraphContent[4].textContent = siteContent['main-content']['vision-content'];
 
 
+const contactHFour = document.querySelectorAll('.contact h4');
+contactHFour[0].textContent = siteContent['contact']['contact-h4'];
 
+const contactParaph = document.querySelectorAll('.contact p');
+const contactParaphArray = Array.from(contactParaph);
+
+contactParaph[0].textContent = siteContent['contact']['address'];
+contactParaph[1].textContent = siteContent['contact']['phone'];
+contactParaph[2].textContent = siteContent['contact']['email'];
+
+contactParaph[0].textContent = contactParaph[0].textContent.replace('Street ', 'Street<br>');
+contactParaph[0].innerHTML = contactParaph[0].textContent; 
+
+//done with contact
+
+const copyRight = document.querySelector('footer p');
+copyRight.textContent = siteContent['footer']['copyright'];
