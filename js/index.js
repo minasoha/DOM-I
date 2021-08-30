@@ -86,3 +86,26 @@ links.forEach(link => link.style.color = 'green');
 
 //DONE with header
 
+const textContent = document.querySelectorAll('.main-content h4');
+const textContentArray = Array.from(textContent);
+textContent[0].textContent = siteContent['main-content']['features-h4'];
+textContent[1].textContent = siteContent['main-content']['about-h4'];
+textContent[2].textContent = siteContent['main-content']['services-h4'];
+textContent[3].textContent = siteContent['main-content']['product-h4'];
+textContent[4].textContent = siteContent['main-content']['vision-h4'];
+
+
+let midImg = document.querySelector("#middle-img");
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+const paraphContent = document.querySelectorAll('.text-content p');
+const paraphContentArray = Array.from(paraphContent);
+
+paraphContent[0].textContent = siteContent['main-content']['features-content'];
+paraphContent[1].textContent = siteContent['main-content']['about-content'];
+paraphContent[2].textContent = siteContent['main-content']['services-content'];
+paraphContent[3].textContent = siteContent['main-content']['product-content'];
+paraphContent[4].textContent = siteContent['main-content']['vision-content'];
+
+
+
